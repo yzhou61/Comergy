@@ -1,0 +1,16 @@
+﻿## Interface: 40300
+## Title: Comergy
+## Notes: Simple, nice-looking energy/combo/power addon for all power-based classes.
+## Notes-zhCN: 简洁美观的能量连击点插件
+## Notes-zhTW: 簡潔美觀的能量連擊點插件
+## Version: 1.58r
+## Author: Yu (Insll@Borean Tundra)
+## DefaultState: Enabled
+## SavedVariablesPerCharacter: Comergy_Config
+
+locales\localization.enUS.lua
+locales\localization.koKR.lua
+locales\localization.zhCN.lua
+locales\localization.zhTW.lua
+
+comergy.xml
