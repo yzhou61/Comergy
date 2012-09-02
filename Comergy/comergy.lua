@@ -741,12 +741,13 @@ function PopulateDefaultSettings()
         FlipBars = false,
         FlipOrientation = false,
         VerticalBars = false,
+        FrameStrata = 2,
 
         EnergyThreshold1 = 25,
         EnergyThreshold2 = 35,
         EnergyThreshold3 = 40,
         EnergyThreshold4 = 60,
-        
+
         EnergyColor0 = { 1, 0, 0 },
         EnergyColor1 = { 1, 0, 0 },
         EnergyColor2 = { 1, 0.5, 0 },
@@ -921,7 +922,7 @@ function Initialize()
 
     local f = CreateFrame("Frame")
     f.name = "Comergy"
-    
+
     local title = f:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     title:SetPoint("TOPLEFT", 16, -16)
     title:SetText("Comergy")
@@ -1140,7 +1141,7 @@ function ComergyOnLoad(self)
                 EventHandlers[event](...)
             end
         end)
-        
+
         self:RegisterEvent("ADDON_LOADED")
         self:RegisterEvent("PLAYER_LOGIN")
         self:RegisterEvent("PLAYER_ENTERING_WORLD")
