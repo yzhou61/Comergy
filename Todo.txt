@@ -1,0 +1,19 @@
+P0:
+ - Precise color change when crossing a breakpoint
+ - Adjustable strata (or highest?)
+ - Bug: Energy bars flash when changing settings
+
+P1:
+ - Show numbers when hover
+ - Adjustable health thickness
+ - Target health split at 35%
+
+P2:
+ - Target cast bar
+ - Energy fade-in effect
+ - Poison tracking
+ - Combo point of previous target
+ - Paladin combo points (holy power?)
+ - Monk Chi?
+ - Lock power?
+ - Mana?
