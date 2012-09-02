@@ -1,9 +1,7 @@
 P0:
- - Precise color change when crossing a breakpoint
  - Bug: Energy bars flash when changing settings
 
 P1:
- - Show numbers when hover
  - Adjustable health thickness
  - Target health split at 35%
 

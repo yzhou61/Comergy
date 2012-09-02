@@ -416,6 +416,8 @@ function ComergyOptOnLoad()
 
     CreateCheckButton("ShowPlayerHealthBar", ComergyOptEnergyFrame, 20, -345)
 
+    CreateCheckButton("GradientEnergyColor", ComergyOptEnergyFrame, 20, -380)
+
     CreateCheckButton("SoundCombo1", ComergyOptComboFrame, 100, -60)
     CreateCheckButton("SoundCombo2", ComergyOptComboFrame, 100, -90)
     CreateCheckButton("SoundCombo3", ComergyOptComboFrame, 100, -120)

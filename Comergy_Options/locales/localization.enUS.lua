@@ -43,6 +43,7 @@ if (true) then
         ["EnergyFlash"] = "Flash energy bars",
         ["EnergyText"] = "Energy text",
         ["UnifiedEnergyColor"] = "Unified energy color",
+        ["GradientEnergyColor"] = "Gradient energy color",
         ["EnergyBGFlash"] = "Flash energy BG when \"Not enough energy\"",
         ["ShowPlayerHealthBar"] = "Show player's health bar",
         ["ComboText"] = "Combo text",

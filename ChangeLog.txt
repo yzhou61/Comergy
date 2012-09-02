@@ -1,5 +1,6 @@
 1.60 Release - TODO
 Adjustable frame strata, default is MEDIUM
+Add "Gradient energy color" option
 
 1.59 Release - Aug 29, 2012
 A quick fix for WoW 5.0

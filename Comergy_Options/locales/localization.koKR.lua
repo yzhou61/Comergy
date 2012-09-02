@@ -43,6 +43,7 @@
         ["EnergyFlash"] = "어둠의 춤일 때 기력 반짝임",
         ["EnergyText"] = "기력 숫자",
         ["UnifiedEnergyColor"] = "기력 색상 통일",
+        ["GradientEnergyColor"] = "Gradient energy color",
         ["EnergyBGFlash"] = "기력이 모자랄 때 배경 반짝이기",
         ["ShowPlayerHealthBar"] = "플레이어 체력 막대 보기",
         ["ComboText"] = "연계 점수 문자",

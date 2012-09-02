@@ -43,6 +43,7 @@
         ["EnergyFlash"] = "闪烁能量条",
         ["EnergyText"] = "能量数字",
         ["UnifiedEnergyColor"] = "能量条颜色统一",
+        ["GradientEnergyColor"] = "Gradient energy color",
         ["EnergyBGFlash"] = "能量不足时闪烁能量条背景",
         ["ShowPlayerHealthBar"] = "显示玩家血量",
         ["ComboText"] = "连击点数字",

@@ -373,7 +373,12 @@ function EnergyChanged(isSmallInc)
         else
             GradientObject(energyBars[i], 1, changeDuration, status.curEnergy - energyBars[i].min)
             for j = 1, 3 do
-                local color = energyBars[i].minColor[j] + (energyBars[i].maxColor[j] - energyBars[i].minColor[j]) / (energyBars[i].max - energyBars[i].min) * (status.curEnergy - energyBars[i].min)
+                local color
+                if (Comergy_Settings.GradientEnergyColor) then
+                    color = energyBars[i].minColor[j] + (energyBars[i].maxColor[j] - energyBars[i].minColor[j]) / (energyBars[i].max - energyBars[i].min) * (status.curEnergy - energyBars[i].min)
+                else
+                    color = energyBars[i].maxColor[j]
+                end
                 if (Comergy_Settings.UnifiedEnergyColor) then
                     local k
                     for k = 1, numEnergyBars do
@@ -766,6 +771,7 @@ function PopulateDefaultSettings()
         SplitEnergy4 = true,
         EnergyText = true,
         UnifiedEnergyColor = true,
+        GradientEnergyColor = true,
 
         EnergyBGColorAlpha = { 0.3, 0.3, 1, 0.5 },
         EnergyBGFlash = true,
