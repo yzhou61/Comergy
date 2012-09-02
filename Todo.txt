@@ -1,6 +1,5 @@
 P0:
  - Precise color change when crossing a breakpoint
- - Adjustable strata (or highest?)
  - Bug: Energy bars flash when changing settings
 
 P1:
