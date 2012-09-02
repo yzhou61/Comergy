@@ -1,9 +1,9 @@
-## Interface: 40300
+## Interface: 50001
 ## Title: Comergy Options
 ## Notes: Options module for Comergy
 ## Notes-zhCN: Comergy的设置模块
 ## Notes-zhTW: Comergy的設置模塊
-## Version: 1.58r
+## Version: 1.60r
 ## Author: Yu (Insll@Borean Tundra)
 ## Dependencies: Comergy
 ## LoadOnDemand: 1

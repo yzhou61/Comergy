@@ -726,8 +726,8 @@ end
 
 function PopulateDefaultSettings()
     local defaultSettings = {
-        Version = "1.58r",
-        VersionInternal = 15800,
+        Version = "1.60r",
+        VersionInternal = 16000,
         ShowOnlyInCombat = false,
         ShowInStealth = true,
         ShowWhenEnergyNotFull = true,
@@ -1148,16 +1148,7 @@ function ComergyOnLoad(self)
 end
 
 function ComergyGetTalent()
-    local primary = 1
-    local maxPoints = 0
-    for i = 1, 3 do
-        local _, _, _, _, points = GetTalentTabInfo(i)
-        if (points > maxPoints) then
-            primary = i
-            maxPoints = points
-        end
-    end
-    local _, primaryName = GetTalentTabInfo(primary)
+    local _, primaryName = GetSpecializationInfo(GetSpecialization())
     return status.talent, primaryName
 end
 
@@ -1172,7 +1163,7 @@ function EventHandlers.ADDON_LOADED(addonName)
 end
 
 function EventHandlers.PLAYER_LOGIN()
-    status.talent = GetActiveTalentGroup()
+    status.talent = GetActiveSpecGroup()
 
     if (not Comergy_Config) then
         Comergy_Config = { }
@@ -1378,7 +1369,7 @@ function EventHandlers.UNIT_HEALTH()
 end
 
 function EventHandlers.ACTIVE_TALENT_GROUP_CHANGED()
-    status.talent = GetActiveTalentGroup()
+    status.talent = GetActiveSpecGroup()
 
     if (not Comergy_Config[status.talent]) then
         Comergy_Config[status.talent] = { }
@@ -1516,14 +1507,14 @@ function OnFrameUpdate(elapsed)
         if (status.energyBGFlashing > 0) then
             for i = 1, numEnergyBars do
                 ResetObject(energyBars[i].bg, FLASH_VALUES)
-                energyBars[i].bg:SetTexture(Comergy_Settings.EnergyBGColorAlpha[1], Comergy_Settings.EnergyBGColorAlpha[2], 
+                energyBars[i].bg:SetTexture(Comergy_Settings.EnergyBGColorAlpha[1], Comergy_Settings.EnergyBGColorAlpha[2],
                     Comergy_Settings.EnergyBGColorAlpha[3], energyBars[i].bg.curValue[1])
                 GradientObject(energyBars[i].bg, 1, FLASH_DURATION, Comergy_Settings.EnergyBGColorAlpha[4] * 0.3)
             end
         else
             for i = 1, numEnergyBars do
                 ResetObject(energyBars[i].bg, { Comergy_Settings.EnergyBGColorAlpha[4] * 0.3 })
-                energyBars[i].bg:SetTexture(Comergy_Settings.EnergyBGColorAlpha[1], Comergy_Settings.EnergyBGColorAlpha[2], 
+                energyBars[i].bg:SetTexture(Comergy_Settings.EnergyBGColorAlpha[1], Comergy_Settings.EnergyBGColorAlpha[2],
                     Comergy_Settings.EnergyBGColorAlpha[3], energyBars[i].bg.curValue[1])
             end
         end
