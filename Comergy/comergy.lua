@@ -1085,6 +1085,24 @@ function ComergyOnConfigChange()
     TextStyleChanged()
     PlayerHealthChanged()
 
+    if (Comergy_Settings.Strata == 0) then
+        ComergyMainFrame:SetFrameStrata("BACKGROUND")
+    else if (Comergy_Settings.Strata == 1) then
+        ComergyMainFrame:SetFrameStrata("LOW")
+    else if (Comergy_Settings.Strata == 2) then
+        ComergyMainFrame:SetFrameStrata("MEDIUM")
+    else if (Comergy_Settings.Strata == 3) then
+        ComergyMainFrame:SetFrameStrata("HIGH")
+    else if (Comergy_Settings.Strata == 4) then
+        ComergyMainFrame:SetFrameStrata("DIALOG")
+    else if (Comergy_Settings.Strata == 5) then
+        ComergyMainFrame:SetFrameStrata("FULLSCREEN")
+    else if (Comergy_Settings.Strata == 6) then
+        ComergyMainFrame:SetFrameStrata("FULLSCREEN_DIALOG")
+    else if (Comergy_Settings.Strata == 7) then
+        ComergyMainFrame:SetFrameStrata("TOOLTIP")
+    end end end end end end end end
+
     MainFrameToggle()
 end
 

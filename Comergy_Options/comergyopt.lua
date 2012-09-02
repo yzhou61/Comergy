@@ -349,6 +349,8 @@ function ComergyOptOnLoad()
     CreateCheckButton("TextCenter", ComergyOptGeneralFrame, 163, -330)
     CreateCheckButton("TextCenterUp", ComergyOptGeneralFrame, 183, -350)
 
+    CreateSlider("FrameStrata", 0, 7, ComergyOptGeneralFrame, 20, -395, 110, 1, COMERGY_FRAME_STRATA, false, COMERGY_LOW, COMERGY_HIGH)
+
     local b = CreateFrame("Button", nil, ComergyOptGeneralFrame, "OptionsButtonTemplate")
     b:SetText(COMERGY_HCENTER)
     b:SetWidth(120)

@@ -80,7 +80,7 @@ xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 
 
     <Frame name="ComergyOptFrame" parent="UIParent" movable="true" toplevel="true" clampedToScreen="true" hidden="true">
-        <Size x="310" y="440"/>
+        <Size x="310" y="485"/>
         <Anchors>
             <Anchor point="CENTER"/>
         </Anchors>
