@@ -418,11 +418,10 @@ function ComergyOptOnLoad()
     CreateCheckButton("EnergyBGFlash", ComergyOptEnergyFrame, 20, -245)
     CreateCheckButton("EnergyText", ComergyOptEnergyFrame, 20, -265)
     CreateCheckButton("UnifiedEnergyColor", ComergyOptEnergyFrame, 120, -265)
-    CreateCheckButton("EnergyFlash", ComergyOptEnergyFrame, 40, -310)
+    CreateCheckButton("GradientEnergyColor", ComergyOptEnergyFrame, 120, -285)
+    CreateCheckButton("EnergyFlash", ComergyOptEnergyFrame, 40, -330)
 
-    CreateCheckButton("ShowPlayerHealthBar", ComergyOptEnergyFrame, 20, -345)
-
-    CreateCheckButton("GradientEnergyColor", ComergyOptEnergyFrame, 20, -380)
+    CreateCheckButton("ShowPlayerHealthBar", ComergyOptEnergyFrame, 20, -365)
 
     CreateCheckButton("SoundCombo1", ComergyOptComboFrame, 100, -60)
     CreateCheckButton("SoundCombo2", ComergyOptComboFrame, 100, -90)
@@ -440,7 +439,7 @@ function ComergyOptOnLoad()
     CreateEditBox("EnergyThreshold2", ComergyOptEnergyFrame, 30, -83)
     CreateEditBox("EnergyThreshold3", ComergyOptEnergyFrame, 30, -113)
     CreateEditBox("EnergyThreshold4", ComergyOptEnergyFrame, 30, -143)
-    
+
     CreateColorButton("BGColorAlpha", ComergyOptGeneralFrame, 190, -210, true)
     CreateColorButton("TextColor", ComergyOptGeneralFrame, 190, -235, true)
 
@@ -452,7 +451,7 @@ function ComergyOptOnLoad()
     CreateColorButton("EnergyColor5", ComergyOptEnergyFrame, 170, -180, true)
 
     CreateColorButton("EnergyBGColorAlpha", ComergyOptEnergyFrame, 190, -215, true)
-    CreateColorButton("EnergyFlashColor", ComergyOptEnergyFrame, 190, -310, true)
+    CreateColorButton("EnergyFlashColor", ComergyOptEnergyFrame, 190, -330, true)
 
     CreateColorButton("ComboColor0", ComergyOptComboFrame, 150, -30, true)
     CreateColorButton("ComboColor1", ComergyOptComboFrame, 150, -60, true)

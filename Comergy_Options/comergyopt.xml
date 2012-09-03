@@ -239,7 +239,7 @@ xsi:schemaLocation="http://www.blizzard.com/wow/ui/
                             <Anchors>
                                 <Anchor point="TOPLEFT" relativeTo="ComergyOptEnergyFrame" relativePoint="TOPLEFT">
                                     <Offset>
-                                        <AbsDimension x="20" y="-295"/>
+                                        <AbsDimension x="20" y="-315"/>
                                     </Offset>
                                 </Anchor>
                             </Anchors>
