@@ -1,4 +1,4 @@
-1.60 Release - TODO
+1.60 Release - Sep 03, 2012
 Adjustable frame strata, default is MEDIUM
 Add "Gradient energy color" option
 
