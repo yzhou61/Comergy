@@ -231,6 +231,12 @@ function SetCheckBox()
     else
         DisableWidget(ComergyOptColorEnergyFlashColor)
     end
+
+    if (ComergyOptCheckButtonGradientEnergyColor:GetChecked()) then
+        EnableWidget(ComergyOptColorEnergyColor0)
+    else
+        DisableWidget(ComergyOptColorEnergyColor0)
+    end
 end
 
 function SetClickables()
