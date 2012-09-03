@@ -1173,7 +1173,13 @@ function ComergyOnLoad(self)
 end
 
 function ComergyGetTalent()
-    local _, primaryName = GetSpecializationInfo(GetSpecialization())
+    local primaryName
+    local specIndex = GetSpecialization()
+    if (specIndex ~= nil) then
+        _, primaryName = GetSpecializationInfo(specIndex)
+    else
+        primaryName = "N/A"
+    end
     return status.talent, primaryName
 end
 
