@@ -1,9 +1,16 @@
 P0:
  - Bug: Energy bars flash when changing settings
+ - Create elements dynamically
+ - Change "energy" to a more generic term
+ - Label width
+ - Mana show/hide logic
+ - Mana default settings
 
 P1:
  - Adjustable health thickness
  - Target health split at 35%
+ - Flash when e.g. "surge of light"
+ - Sound notification of spell critical hit
 
 P2:
  - Target cast bar
